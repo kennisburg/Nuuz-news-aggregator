@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <title>Nuuz - News Aggregator</title>
+  </head>
+
+  <body>
+    <h1>Top Stories</h1>
+    <br>
+    <div class="stories">
+      <a class="logo" href={{sites['ap']}}><img src="static/logo/ap.jpg" height="60px"><h2>Associated Press</h2></a>
+      <ul>
+        {%for i in stories['ap']%}
+          <li>
+              <a href={{stories['ap'][i]}}>{{i}}</a>
+          </li>
+        {%endfor%}
+      </ul>
+    </div>
+
+    <div class="stories">
+        <a class="logo" href={{sites['reut']}}><img src="static/logo/reut.png" height="100px"><h2>Reuters</h2></a>
+      <ul>
+        {%for i in stories['reut']%}
+          <li>
+              <a href={{stories['reut'][i]}}>{{i}}</a>
+          </li>
+        {%endfor%}
+      </ul>
+    </div>
+
+
+    <div class="stories">
+        <a class="logo" href={{sites['cnbc']}}><img src="static/logo/cnbc.png" height="45px"><h2>CNBC</h2></a>
+      <ul>
+        {%for i in stories['cnbc']%}
+          <li>
+              <a href={{stories['cnbc'][i]}}>{{i}}</a>
+          </li>
+        {%endfor%}
+      </ul>
+    </div>
+
+
+    <div class="stories">
+        <a class="logo" href={{sites['bbc']}}><img src="static/logo/bbc.png" height="45px"><h2>BBC</h2></a>
+      <ul>
+        {%for i in stories['bbc']%}
+          <li>
+              <a href={{stories['bbc'][i]}}>{{i}}</a>
+          </li>
+        {%endfor%}
+      </ul>
+    </div>
+
+    <div class="stories">
+        <a class="logo" href={{sites['npr']}}><img src="static/logo/npr.png" height="45px"><h2>NPR</h2></a>
+      <ul>
+        {%for i in stories['npr']%}
+          <li>
+              <a href={{stories['npr'][i]}}>{{i}}</a>
+          </li>
+        {%endfor%}
+      </ul>
+    </div>
+
+  </body>
+</html>
